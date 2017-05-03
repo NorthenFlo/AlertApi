@@ -18,3 +18,24 @@ Ajouter simplement l'affichage de votre alerte selon le moment ou voulez l'affic
 AlertHallyosAPI.Show("<html>Votre titre<br /> Message d'alerte</html>", "danger");
 
 Le premier argument correspond au titre et au message et le derniers correspond au status, (Danger, Success, Infos).
+
+(PARTIE OPTIONNEL)
+
+Si lorsque vous maximizer votre fenêtre, l'alerte ne suit pas,
+D'abord, ajoutez 
+```
+     this.addWindowStateListener(new WindowStateListener() {
+	    	public void windowStateChanged(WindowEvent arg0) {
+	    	   frame__windowStateChanged(arg0);
+	    	}
+	    });
+```
+dans la déclaration de votre Frame et ajouter cette fonction dans la class de votre Frame.
+
+```
+public void frame__windowStateChanged(WindowEvent e){
+		if ((e.getNewState() & Frame.MAXIMIZED_BOTH) == Frame.MAXIMIZED_BOTH){
+			AlertAPI.alert_panel.setSize(this.getWidth(), 50);
+		}
+}
+```
