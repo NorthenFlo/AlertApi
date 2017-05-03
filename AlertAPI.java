@@ -32,7 +32,7 @@ public class AlertAPI {
 	
 	public static JPanel AddAlertPanel(int x_p, int y_p, int x_s, int y_s)
 	{
-		Font font;
+		Font font = new Font("Calibri", 0, 16);
 		alert_panel.setBounds(x_p, y_p, x_s, y_s);
 		alert_panel.setVisible(false);
 		alert_panel.setLayout(new BoxLayout(alert_panel, BoxLayout.Y_AXIS));
