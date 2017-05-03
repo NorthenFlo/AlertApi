@@ -17,4 +17,4 @@ Après avoir déclarer ceci,
 Ajouter simplement l'affichage de votre alerte selon le moment ou voulez l'afficher.
 AlertHallyosAPI.Show("<html>Votre titre<br /> Message d'alerte</html>", "danger");
 
-Le premier argument correspond au titre, le deuxième au message et le derniers correspond au status, (Danger, Success, Infos).
+Le premier argument correspond au titre et au message et le derniers correspond au status, (Danger, Success, Infos).
