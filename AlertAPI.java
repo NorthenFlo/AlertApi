@@ -37,7 +37,7 @@ public class AlertAPI {
 		alert_panel.setVisible(false);
 		alert_panel.setLayout(new BoxLayout(alert_panel, BoxLayout.Y_AXIS));
 		alert_panel.setAlignmentX(Component.LEFT_ALIGNMENT);
-		alert_panel.setBorder(new EmptyBorder(2, 10, 10, 10));
+		alert_panel.setBorder(new EmptyBorder(6, 10, 10, 10));
 		alert_label.setBounds(10, 10, 20, 20);
 		alert_label.setFont(font.deriveFont(16.0F));
 		alert_label.setForeground(Color.WHITE);
