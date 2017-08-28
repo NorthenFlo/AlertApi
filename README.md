@@ -8,9 +8,8 @@ dans la déclaration de votre JPanel;
 Ajouter: 
 
 ```
-add(AlertAPI.AddAlertPanel(300, 64, 700, 50)); 
+add(AlertAPI.AddAlertPanel(xPosition, yPosition, width, height)); 
 ```
-Le premier chiffre correspond à la position X de l'alert, le deuxième à la position Y de l'alert et les deux derniers correspond à la taille de la largeur et la hauteur de l'alert !
 
 Après avoir déclaré ceci;
 Ajouter simplement l'affichage de votre alerte selon le moment où veut l'afficher.
